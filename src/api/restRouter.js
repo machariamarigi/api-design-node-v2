@@ -5,4 +5,6 @@ import { playlistRouter } from './resources/playlist'
 
 export const restRouter = express.Router()
 
-restRouter.use('/user', userRouter)
+restRouter.use('/users', userRouter);
+restRouter.use('/songs', songRouter);
+restRouter.use('/playlists', playlistRouter);
