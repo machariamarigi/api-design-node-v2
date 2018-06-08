@@ -1,10 +1,11 @@
 import { User } from '../resources/user/user.model'
 import jwt from 'jsonwebtoken'
 import expressJwt from 'express-jwt'
-const jwtSecret = 'blueRhinoJumps'
+import config from '../../config';
 
-const checkToken = expressJwt({ secret: jwtSecret })
-const disableAuth = false
+const jwtSecret = config.secrets.JWT_STRING
+  const checkToken = expressJwt({ secret: jwtSecret })
+  const disableAuth = config.disableAuth
 
 export const signin = (req, res, next) => {
   // req.user will be there from the middleware
