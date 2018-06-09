@@ -17,4 +17,8 @@ describe('User Model', () => {
   })
 })
 
-createApiSpec(User, 'user', {username: 'stu', passwordHash: '1223saf'})
+createApiSpec(
+  User, 'user',
+  {username: 'stu',passwordHash: '1223saf'},
+  {username: 'new',passwordHash: '12233saf'}
+)

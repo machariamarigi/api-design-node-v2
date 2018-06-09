@@ -27,5 +27,6 @@ describe('Playlist Model', () => {
 createApiSpec(
   Playlist,
   'playlist',
-  {title: 'study jams', favorite: true}
+  {title: 'study jams', favorite: true},
+  {title: 'party jams', favorite: false}
 )

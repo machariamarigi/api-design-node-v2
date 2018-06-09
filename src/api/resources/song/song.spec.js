@@ -36,5 +36,6 @@ describe('Song model', () => {
 createApiSpec(
   Song,
   'song',
-  {title: 'downtown jamming', url: 'http://music.mp3'}
+  {title: 'downtown jamming', url: 'http://music.mp3'},
+  {title: 'Downtown Jamming', url: 'https://music.mp3'}
 )
